@@ -16,7 +16,7 @@ services:
     #build:
     #  context: ./frontend  # path to your the frontend app's Dockerfile
     # this names the frontend container, 'frontend'
-    image: frontend_service:second
+    image: frontend_service:latest
     container_name: frontend
     networks:
       - fabflix
