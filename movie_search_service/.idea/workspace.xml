@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c7be502f-6b2a-496a-a69c-fa379834fe51" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieService.log" beforeDir="false" afterPath="$PROJECT_DIR$/MovieService.log" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2ABYAyklxEbAcLuESUza5b2KQAu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunConfigurationTargetLRU" value="c47a0a8b-0a29-4f5a-97ea-58c207940e66&#10;c47a0a8b-0a29-4f5a-97ea-58c207940e66/schema/&quot;movies&quot;" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.MoviesService">
+    <configuration name="1_person.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/db/1_person.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="c47a0a8b-0a29-4f5a-97ea-58c207940e66" namespace="schema/&quot;movies&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="2_movie.sql and 2 more" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/db/2_movie.sql" />
+      <script-file value="$PROJECT_DIR$/db/3_movie_genre.sql" />
+      <script-file value="$PROJECT_DIR$/db/4_movie_person.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="c47a0a8b-0a29-4f5a-97ea-58c207940e66" namespace="schema/&quot;movies&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="2_movie.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/db/2_movie.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="c47a0a8b-0a29-4f5a-97ea-58c207940e66" namespace="schema/&quot;movies&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MoviesServiceTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="cs122b-be2-movies-service-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.klefstad_teaching.cs122b.movies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.klefstad_teaching.cs122b.movies" />
+      <option name="MAIN_CLASS_NAME" value="com.github.klefstad_teaching.cs122b.movies.MoviesServiceTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <envs>
+        <env name="DB_USERNAME" value="root" />
+        <env name="DB_PASSWORD" value="asdfghjkl;'" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MoviesServiceTest.personSearchByBirthday" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cs122b-be2-movies-service-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.klefstad_teaching.cs122b.movies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.klefstad_teaching.cs122b.movies" />
+      <option name="MAIN_CLASS_NAME" value="com.github.klefstad_teaching.cs122b.movies.MoviesServiceTest" />
+      <option name="METHOD_NAME" value="personSearchByBirthday" />
+      <option name="TEST_OBJECT" value="method" />
+      <envs>
+        <env name="DB_USERNAME" value="root" />
+        <env name="DB_PASSWORD" value="asdfghjkl;'" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MoviesServiceTest.personSearchByMovieTitlePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cs122b-be2-movies-service-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.klefstad_teaching.cs122b.movies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.klefstad_teaching.cs122b.movies" />
+      <option name="MAIN_CLASS_NAME" value="com.github.klefstad_teaching.cs122b.movies.MoviesServiceTest" />
+      <option name="METHOD_NAME" value="personSearchByMovieTitlePage" />
+      <option name="TEST_OBJECT" value="method" />
+      <envs>
+        <env name="DB_USERNAME" value="root" />
+        <env name="DB_PASSWORD" value="asdfghjkl;'" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MoviesServiceTest.personSearchByMovieTitlePopularityDesc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cs122b-be2-movies-service-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.klefstad_teaching.cs122b.movies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.klefstad_teaching.cs122b.movies" />
+      <option name="MAIN_CLASS_NAME" value="com.github.klefstad_teaching.cs122b.movies.MoviesServiceTest" />
+      <option name="METHOD_NAME" value="personSearchByMovieTitlePopularityDesc" />
+      <option name="TEST_OBJECT" value="method" />
+      <envs>
+        <env name="DB_USERNAME" value="root" />
+        <env name="DB_PASSWORD" value="asdfghjkl;'" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MoviesServiceTest.personSearchDefault" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cs122b-be2-movies-service-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.klefstad_teaching.cs122b.movies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.klefstad_teaching.cs122b.movies" />
+      <option name="MAIN_CLASS_NAME" value="com.github.klefstad_teaching.cs122b.movies.MoviesServiceTest" />
+      <option name="METHOD_NAME" value="personSearchDefault" />
+      <option name="TEST_OBJECT" value="method" />
+      <envs>
+        <env name="DB_USERNAME" value="root" />
+        <env name="DB_PASSWORD" value="asdfghjkl;'" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MoviesServiceTest.personSearchDefaultLimitPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cs122b-be2-movies-service-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.klefstad_teaching.cs122b.movies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.klefstad_teaching.cs122b.movies" />
+      <option name="MAIN_CLASS_NAME" value="com.github.klefstad_teaching.cs122b.movies.MoviesServiceTest" />
+      <option name="METHOD_NAME" value="personSearchDefaultLimitPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <envs>
+        <env name="DB_USERNAME" value="root" />
+        <env name="DB_PASSWORD" value="asdfghjkl;'" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="cs122b-be2-movies-service-starter" />
+      <option name="PACKAGE_NAME" value="com.github.klefstad_teaching.cs122b.movies" />
+      <option name="MAIN_CLASS_NAME" value="com.github.klefstad_teaching.cs122b.movies.MoviesServiceTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <envs>
+        <env name="DB_USERNAME" value="root" />
+        <env name="DB_PASSWORD" value="asdfghjkl;'" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MoviesService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cs122b-be2-movies-service-starter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.klefstad_teaching.cs122b.movies.MoviesService" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <envs>
+        <env name="DB_USERNAME" value="root" />
+        <env name="DB_PASSWORD" value="asdfghjkl;'" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cs122b-be2-movies-service-starter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.klefstad_teaching.cs122b.movies.MoviesService" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <envs>
+        <env name="DB_USERNAME" value="root" />
+        <env name="DB_PASSWORD" value="asdfghjkl;'" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Database Script.1_person.sql" />
+      <item itemvalue="Database Script.2_movie.sql and 2 more" />
+      <item itemvalue="Database Script.2_movie.sql" />
+      <item itemvalue="JUnit.MoviesServiceTest" />
+      <item itemvalue="JUnit.MoviesServiceTest.personSearchDefault" />
+      <item itemvalue="JUnit.MoviesServiceTest.personSearchDefaultLimitPage" />
+      <item itemvalue="JUnit.MoviesServiceTest.personSearchByBirthday" />
+      <item itemvalue="JUnit.MoviesServiceTest.personSearchByMovieTitlePage" />
+      <item itemvalue="JUnit.MoviesServiceTest.personSearchByMovieTitlePopularityDesc" />
+      <item itemvalue="Spring Boot.MoviesService" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MoviesServiceTest.personSearchByMovieTitlePopularityDesc" />
+        <item itemvalue="JUnit.MoviesServiceTest.personSearchByMovieTitlePage" />
+        <item itemvalue="JUnit.MoviesServiceTest.personSearchByBirthday" />
+        <item itemvalue="JUnit.MoviesServiceTest.personSearchDefaultLimitPage" />
+        <item itemvalue="JUnit.MoviesServiceTest.personSearchDefault" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7be502f-6b2a-496a-a69c-fa379834fe51" name="Changes" comment="" />
+      <created>1654484312761</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654484312761</updated>
+      <workItem from="1654484330249" duration="5745000" />
+      <workItem from="1654492737563" duration="5992000" />
+      <workItem from="1654573762494" duration="32730000" />
+      <workItem from="1659981597256" duration="3103000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
