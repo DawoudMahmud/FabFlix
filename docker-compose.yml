@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  nginx:
+    #build:
+    #  context: ./nginx  # path to your the nginx app's Dockerfile
+    # this names the frontend container, 'nginx'
+    image: fabflix-nginx:latest
+    container_name: nginx
+    ports:
+      - "80:80"  # Expose NGINX on port 80
+    networks:
+      - fabflix
+
+  frontend:
+    #build:
+    #  context: ./frontend  # path to your the frontend app's Dockerfile
+    # this names the frontend container, 'frontend'
+    image: frontend_service:second
+    container_name: frontend
+    networks:
+      - fabflix
+
+# create a dedicated Docker network so all the container can talk to each other
+# where they reference each other by their container name (e.g. 'nginx', 'frontend', etc)
+networks:
+  fabflix:

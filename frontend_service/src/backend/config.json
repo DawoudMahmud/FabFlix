@@ -1,0 +1,14 @@
+{
+  "baseUrl": "http://authentication:8081",
+  "idm": {
+    "login": "/login",
+    "register": "/register",
+    "authenticate": "/authenticate",
+    "home": "/"
+  },
+
+  "searchUrl": "http://search:8082",
+  "movies": {
+    "search": "/movie/search"
+  }
+}
