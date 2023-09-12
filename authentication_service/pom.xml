@@ -71,7 +71,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <groupId>org.springframework.boot</groupId>
                 <configuration>
-                    <mainClass>com.gitcodings.stack.idm.IDMService</mainClass>
+                    <mainClass>com.github.klefstad_teaching.cs122b.idm.IDMService.java</mainClass>
                 </configuration>
             </plugin>
         </plugins>

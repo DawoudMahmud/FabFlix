@@ -1,3 +1,4 @@
+FROM maven:3.8.4-openjdk-11 AS build-stack-core
 # Use an official Maven image as a parent image to build the application
 FROM maven:3.8.4-openjdk-11 AS build
 
@@ -22,7 +23,7 @@ WORKDIR /app
 
 # Copy the JAR file from the build container to the runtime container
 # artifact name set here:  https://github.com/DawoudMahmud/FabFlix/blob/master/authentication_service/pom.xml#L20
-COPY --from=build /app/target/authentication_service .
+COPY --from=build /app/target/authentication_service-1.2.0.jar authentication_service.jar
 
 # Expose the port that the Spring Boot application will run on
 EXPOSE 8080
