@@ -2,8 +2,8 @@ version: '3'
 
 services:
   nginx:
-    #build:
-    #  context: ./nginx  # path to your the nginx app's Dockerfile
+    build:
+      context: ./nginx  # path to your the nginx app's Dockerfile
     # this names the frontend container, 'nginx'
     image: fabflix-nginx:latest
     container_name: nginx
@@ -13,8 +13,8 @@ services:
       - fabflix
 
   frontend:
-    #build:
-    #  context: ./frontend  # path to your the frontend app's Dockerfile
+    build:
+     context: ./frontend  # path to your the frontend app's Dockerfile
     # this names the frontend container, 'frontend'
     image: frontend_service:latest
     container_name: frontend
