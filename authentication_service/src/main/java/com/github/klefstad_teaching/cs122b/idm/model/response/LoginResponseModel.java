@@ -1,8 +1,8 @@
 package com.github.klefstad_teaching.cs122b.idm.model.response;
 
 
-import com.github.klefstad_teaching.cs122b.core.base.ResponseModel;
-import com.github.klefstad_teaching.cs122b.core.result.Result;
+import com.gitcodings.stack.core.base.ResponseModel;
+import com.gitcodings.stack.core.result.Result;
 
 public class LoginResponseModel extends ResponseModel<LoginResponseModel> {
     private String accessToken;

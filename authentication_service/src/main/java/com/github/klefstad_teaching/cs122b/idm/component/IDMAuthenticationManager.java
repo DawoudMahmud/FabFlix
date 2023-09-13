@@ -1,8 +1,8 @@
 package com.github.klefstad_teaching.cs122b.idm.component;
 
-import com.github.klefstad_teaching.cs122b.core.error.ResultError;
-import com.github.klefstad_teaching.cs122b.core.result.IDMResults;
-import com.github.klefstad_teaching.cs122b.core.security.JWTManager;
+import com.gitcodings.stack.core.error.ResultError;
+import com.gitcodings.stack.core.result.IDMResults;
+import com.gitcodings.stack.core.security.JWTManager;
 import com.github.klefstad_teaching.cs122b.idm.config.IDMServiceConfig;
 import com.github.klefstad_teaching.cs122b.idm.model.request.UserRequest;
 import com.github.klefstad_teaching.cs122b.idm.repo.IDMRepo;

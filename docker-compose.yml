@@ -2,8 +2,8 @@ version: '3'
 
 services:
   nginx:
-    #build:
-    #  context: ./nginx  # path to your the nginx app's Dockerfile
+    build:
+      context: ./nginx  # path to your the nginx app's Dockerfile
     # this names the frontend container, 'nginx'
     image: fabflix-nginx:latest
     container_name: nginx
@@ -13,17 +13,26 @@ services:
       - fabflix
 
   frontend:
-    #build:
-    #  context: ./frontend  # path to your the frontend app's Dockerfile
+    build:
+      context: ./frontend_service  # path to your the frontend app's Dockerfile
     # this names the frontend container, 'frontend'
     image: frontend_service:latest
     container_name: frontend
     networks:
       - fabflix
 
+  authentication:
+    build:
+      context: ./authentication_service
+    image: fabflix-authentication:latest
+    container_name: authentication
+    networks:
+      - fabflix
+
   database:
     container_name: database
     image: mysql:5.7.43
+    platform: linux/x86_64 # necessary to work on Joe's M1 Mac
     env_file:
      - ./database.env
     volumes:

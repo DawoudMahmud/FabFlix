@@ -1,7 +1,7 @@
 package com.github.klefstad_teaching.cs122b.idm.util;
 
-import com.github.klefstad_teaching.cs122b.core.error.ResultError;
-import com.github.klefstad_teaching.cs122b.core.result.IDMResults;
+import com.gitcodings.stack.core.error.ResultError;
+import com.gitcodings.stack.core.result.IDMResults;
 import org.springframework.stereotype.Component;
 
 import java.nio.CharBuffer;

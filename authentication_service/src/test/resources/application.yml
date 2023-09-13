@@ -7,7 +7,7 @@ spring:
     password: ${DB_PASSWORD}
 
 idm:
-  key-file-name: ec-key.json
+  key-file-name: /app/src/main/resources/ec-key.json
   access-token-expire: 2s
   refresh-token-expire: 5s
   max-refresh-token-life-time: 10s
