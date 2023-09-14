@@ -3,8 +3,8 @@ spring:
     name: IdmService
   datasource:
     url: jdbc:mysql://database:3306
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    username: root
+    password: your_root_password_here
 
 server:
   address: 0.0.0.0
@@ -19,7 +19,7 @@ logging:
 
 idm:
   # (joe.delnano) I tried updating this field to be the path in the container, but it didn't seem to work on a first pass try
-  key-file-name: /app/src/main/resources/ec-key.json
+  key-file-name: ec-key.json
   access-token-expire: 30m
   refresh-token-expire: 12h
   max-refresh-token-life-time: 30d

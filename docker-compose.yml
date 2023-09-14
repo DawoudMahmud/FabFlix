@@ -24,7 +24,7 @@ services:
   authentication:
     build:
       context: ./authentication_service
-    image: fabflix-authentication:latest
+    #image: fabflix-authentication-working:1.0.0
     container_name: authentication
     networks:
       - fabflix

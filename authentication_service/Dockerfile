@@ -6,11 +6,16 @@ WORKDIR /app
 
 # Copy the pom.xml file and download dependencies
 COPY pom.xml .
+
 RUN mvn dependency:go-offline
+
+# custom jar file built from https://github.com/GitCodings/Stack/compare/main...jdelnano:Stack:jdelnano/fixing-resource-fetching?expand=1
+# logic added to `stack-core` was inspired by https://stackoverflow.com/questions/44399422/read-file-from-resources-folder-in-spring-boot
+# as well as https://mkyong.com/java/java-getresourceasstream-in-static-method/
+COPY ./stack-core-1.2.0.jar /root/.m2/repository/com/gitcodings/stack/stack-core/1.2.0/stack-core-1.2.0.jar
 
 # Copy the source code to the container
 COPY src ./src
-
 # Build the JAR file
 RUN mvn package -DskipTests
 
@@ -23,8 +28,6 @@ WORKDIR /app
 # Copy the JAR file from the build container to the runtime container
 # artifact name set here:  https://github.com/DawoudMahmud/FabFlix/blob/master/authentication_service/pom.xml#L20
 COPY --from=build /app/target/cs122b-be1-idm-service-starter-1.2.0.jar /app/target/authentication_service.jar
-COPY --from=build /app/target/* /app/target/
-COPY --from=build /app/src /app/src
 
 # Expose the port that the Spring Boot application will run on
 EXPOSE 8081
