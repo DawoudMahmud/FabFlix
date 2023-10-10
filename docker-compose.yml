@@ -18,14 +18,22 @@ services:
     # this names the frontend container, 'frontend'
     image: frontend_service:latest
     container_name: frontend
+    ports:
+      - "3000:3000"  # Expose NGINX on port 80
+    depends_on:
+      - database
     networks:
       - fabflix
 
   authentication:
     build:
       context: ./authentication_service
-    #image: fabflix-authentication-working:1.0.0
+    image: fabflix-authentication:latest
     container_name: authentication
+    ports:
+      - "8081:8081"  # Expose NGINX on port 80
+    depends_on:
+      - database
     networks:
       - fabflix
 
@@ -37,6 +45,8 @@ services:
      - ./database.env
     volumes:
       - ./mysql_data:/var/lib/mysql  # Use a named volume for persistence
+    networks:
+      - fabflix
 
 # create a dedicated Docker network so all the container can talk to each other
 # where they reference each other by their container name (e.g. 'nginx', 'frontend', etc)
