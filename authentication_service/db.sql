@@ -1,4 +1,4 @@
-CREATE SCHEMA idm;
+CREATE SCHEMA IF NOT EXISTS idm;
 
 CREATE TABLE idm.token_status
 (

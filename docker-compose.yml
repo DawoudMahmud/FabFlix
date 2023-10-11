@@ -16,8 +16,23 @@ services:
     #build:
     #  context: ./frontend  # path to your the frontend app's Dockerfile
     # this names the frontend container, 'frontend'
-    image: frontend_service:second
+    image: frontend_service:latest
     container_name: frontend
+    networks:
+      - fabflix
+
+  database:
+    container_name: database
+    image: mysql:5.7.43
+    env_file:
+     - ./database.env
+    volumes:
+      - ./mysql_data:/var/lib/mysql  # Use a named volume for persistence
+
+  authentication:
+    container_name: authentication
+    build:
+      context: ./authentication_service
     networks:
       - fabflix
 
@@ -25,3 +40,7 @@ services:
 # where they reference each other by their container name (e.g. 'nginx', 'frontend', etc)
 networks:
   fabflix:
+
+volumes:
+  mysql_data:
+    driver: local  

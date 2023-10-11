@@ -1,7 +1,10 @@
 package com.github.klefstad_teaching.cs122b.idm;
 
-import com.github.klefstad_teaching.cs122b.core.spring.StackService;
+import com.gitcodings.stack.core.spring.StackService;
 import com.github.klefstad_teaching.cs122b.idm.config.IDMServiceConfig;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -17,4 +20,17 @@ public class IDMService
     {
         SpringApplication.run(IDMService.class, args);
     }
-}
+
+    @Bean
+	public WebMvcConfigurer corsConfigurer() {
+		return new WebMvcConfigurer() {
+			@Override
+			public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/**")
+                        .allowedMethods("*")
+                        .allowedHeaders("*")
+                        .allowedOrigins("*");
+			}
+		};
+	}
+} 

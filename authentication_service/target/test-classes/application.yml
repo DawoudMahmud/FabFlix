@@ -3,8 +3,8 @@ spring:
     name: IdmService
   datasource:
     url: jdbc:mysql://database:3306
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    username: root #CHANGE THESE FIELDS AFTER DEBUG
+    password: DnJAws!17
 
 idm:
   key-file-name: ec-key.json
