@@ -33,5 +33,5 @@ COPY --from=build /app/target/cs122b-be1-idm-service-starter-1.2.0.jar /app/targ
 EXPOSE 8081
 
 # Define the command to run your Spring Boot application
-ENTRYPOINT ["java", "-jar", "./target/authentication_service.jar"]
+ENTRYPOINT ["java", "-jar", "/app/target/authentication_service.jar"]
 CMD []
