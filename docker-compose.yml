@@ -29,6 +29,15 @@ services:
     volumes:
       - ./mysql_data:/var/lib/mysql  # Use a named volume for persistence
 
+  authentication:
+    container_name: authentication
+    build:
+      context: ./authentication_service
+    env_file:
+     - ./database.env
+    networks:
+      - fabflix
+
 # create a dedicated Docker network so all the container can talk to each other
 # where they reference each other by their container name (e.g. 'nginx', 'frontend', etc)
 networks:

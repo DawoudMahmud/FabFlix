@@ -1,8 +1,8 @@
 package com.github.klefstad_teaching.cs122b.idm.rest;
 
-import com.github.klefstad_teaching.cs122b.core.base.ResultResponse;
-import com.github.klefstad_teaching.cs122b.core.result.IDMResults;
-import com.github.klefstad_teaching.cs122b.core.security.JWTManager;
+import com.gitcodings.stack.core.base.ResultResponse;
+import com.gitcodings.stack.core.result.IDMResults;
+import com.gitcodings.stack.core.security.JWTManager;
 import com.github.klefstad_teaching.cs122b.idm.component.IDMAuthenticationManager;
 import com.github.klefstad_teaching.cs122b.idm.component.IDMJwtManager;
 import com.github.klefstad_teaching.cs122b.idm.model.request.AuthenticateRequestModel;

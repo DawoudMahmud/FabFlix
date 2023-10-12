@@ -1,8 +1,8 @@
 package com.github.klefstad_teaching.cs122b.idm;
 
-import com.github.klefstad_teaching.cs122b.core.result.IDMResults;
-import com.github.klefstad_teaching.cs122b.core.result.Result;
-import com.github.klefstad_teaching.cs122b.core.security.JWTManager;
+import com.gitcodings.stack.core.result.IDMResults;
+import com.gitcodings.stack.core.result.Result;
+import com.gitcodings.stack.core.security.JWTManager;
 import com.nimbusds.jose.JWSAlgorithm;
 import com.nimbusds.jose.JWSHeader;
 import com.nimbusds.jose.JWSSigner;
@@ -39,7 +39,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
-@Sql("/idm-test-data.sql")
+@Sql("idm-test-data.sql")
 @AutoConfigureMockMvc
 public class IDMServiceTest
 {

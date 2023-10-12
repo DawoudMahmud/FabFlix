@@ -347,7 +347,7 @@ This is done by insuring that all `null` values are dropped by either:
 - Putting the `@JsonInclude(JsonInclude.Include.NON_NULL)` on your Model class
   
 ### Result
-All `Result` objects are available as static constants inside of the `com.github.klefstad_teaching.cs122b.core.result.IDMResults` class.
+All `Result` objects are available as static constants inside of the `com.gitcodings.stack.core.result.IDMResults` class.
 These can be used rather than creating your own.
 
 # Endpoints

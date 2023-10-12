@@ -1,6 +1,6 @@
 package com.github.klefstad_teaching.cs122b.idm.model.response;
 
-import com.github.klefstad_teaching.cs122b.core.base.ResponseModel;
+import com.gitcodings.stack.core.base.ResponseModel;
 
 public class RefreshResponseModel  extends ResponseModel<RefreshResponseModel> {
     private String accessToken;
