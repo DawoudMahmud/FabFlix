@@ -28,15 +28,31 @@ services:
      - ./database.env
     volumes:
       - ./mysql_data:/var/lib/mysql  # Use a named volume for persistence
+    networks:
+      - fabflix
 
   authentication:
     container_name: authentication
     build:
       context: ./authentication_service
+    depends_on:
+      - database
     env_file:
      - ./database.env
     networks:
       - fabflix
+
+  search:
+    container_name: search
+    build: 
+      context: ./movie_search_service
+    depends_on:
+      - database
+    env_file:
+     - ./database.env
+    networks:
+      - fabflix
+
 
 # create a dedicated Docker network so all the container can talk to each other
 # where they reference each other by their container name (e.g. 'nginx', 'frontend', etc)

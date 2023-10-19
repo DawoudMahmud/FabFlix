@@ -12,9 +12,9 @@
     </repositories>
 
     <parent>
-        <groupId>com.github.klefstad-teaching</groupId>
-        <artifactId>CS122B-Parent</artifactId>
-        <version>1.0.3</version>
+        <groupId>com.gitcodings.stack</groupId>
+        <artifactId>stack-parent</artifactId>
+        <version>1.2.0</version>
     </parent>
 
     <artifactId>cs122b-be2-movies-service-starter</artifactId>
@@ -22,9 +22,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.github.klefstad-teaching</groupId>
-            <artifactId>CS122B-Core</artifactId>
-            <version>1.0.3</version>
+            <groupId>com.gitcodings.stack</groupId>
+            <artifactId>stack-core</artifactId>
+            <version>1.2.0</version>
         </dependency>
 
         <dependency>

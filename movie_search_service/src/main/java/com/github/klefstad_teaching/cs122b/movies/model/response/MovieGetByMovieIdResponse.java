@@ -1,6 +1,6 @@
 package com.github.klefstad_teaching.cs122b.movies.model.response;
 
-import com.github.klefstad_teaching.cs122b.core.base.ResponseModel;
+import com.gitcodings.stack.core.base.ResponseModel;
 import com.github.klefstad_teaching.cs122b.movies.model.data.*;
 
 import java.util.List;

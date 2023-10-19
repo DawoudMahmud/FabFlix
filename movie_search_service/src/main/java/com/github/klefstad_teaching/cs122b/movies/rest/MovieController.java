@@ -2,9 +2,9 @@ package com.github.klefstad_teaching.cs122b.movies.rest;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.klefstad_teaching.cs122b.core.error.ResultError;
-import com.github.klefstad_teaching.cs122b.core.result.MoviesResults;
-import com.github.klefstad_teaching.cs122b.core.security.JWTManager;
+import com.gitcodings.stack.core.error.ResultError;
+import com.gitcodings.stack.core.result.MoviesResults;
+import com.gitcodings.stack.core.security.JWTManager;
 import com.github.klefstad_teaching.cs122b.movies.model.data.*;
 import com.github.klefstad_teaching.cs122b.movies.model.request.MovieGetByMovieIdRequest;
 import com.github.klefstad_teaching.cs122b.movies.model.request.MovieSearchByPersonRequest;

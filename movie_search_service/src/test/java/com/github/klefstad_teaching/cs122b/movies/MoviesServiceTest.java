@@ -1,8 +1,8 @@
 package com.github.klefstad_teaching.cs122b.movies;
 
-import com.github.klefstad_teaching.cs122b.core.result.Result;
-import com.github.klefstad_teaching.cs122b.core.result.MoviesResults;
-import com.github.klefstad_teaching.cs122b.core.security.JWTAuthenticationFilter;
+import com.gitcodings.stack.core.result.Result;
+import com.gitcodings.stack.core.result.MoviesResults;
+import com.gitcodings.stack.core.security.JWTAuthenticationFilter;
 import net.minidev.json.JSONObject;
 import net.minidev.json.parser.JSONParser;
 import net.minidev.json.parser.ParseException;

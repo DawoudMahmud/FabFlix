@@ -1,7 +1,7 @@
 package com.github.klefstad_teaching.cs122b.movies.model.data;
 
-import com.github.klefstad_teaching.cs122b.core.error.ResultError;
-import com.github.klefstad_teaching.cs122b.core.result.MoviesResults;
+import com.gitcodings.stack.core.error.ResultError;
+import com.gitcodings.stack.core.result.MoviesResults;
 
 import java.util.Locale;
 
