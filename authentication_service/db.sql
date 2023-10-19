@@ -1,4 +1,4 @@
-CREATE SCHEMA idm;
+CREATE SCHEMA IF NOT EXISTS idm;
 
 CREATE TABLE idm.token_status
 (
@@ -38,7 +38,7 @@ CREATE TABLE idm.refresh_token
     user_id	           INT	        NOT NULL,
     token_status_id	   INT	        NOT NULL,
     expire_time	       TIMESTAMP	NOT NULL,
-    max_life_time	   TIMESTAMP	NOT NULL,
+    max_life_time	   TIMESTAMP DEFAULT '1970-01-01 00:00:01' NOT NULL,
     FOREIGN KEY (user_id) REFERENCES idm.user (id)
         ON UPDATE CASCADE ON DELETE CASCADE,
     FOREIGN KEY (token_status_id) REFERENCES idm.token_status (id)
