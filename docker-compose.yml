@@ -2,8 +2,8 @@ version: '3'
 
 services:
   nginx:
-    #build:
-    #  context: ./nginx  # path to your the nginx app's Dockerfile
+    build:
+      context: ./nginx  # path to your the nginx app's Dockerfile
     # this names the frontend container, 'nginx'
     image: fabflix-nginx:latest
     container_name: nginx
@@ -13,28 +13,23 @@ services:
       - fabflix
 
   frontend:
-    #build:
-    #  context: ./frontend  # path to your the frontend app's Dockerfile
-    # this names the frontend container, 'frontend'
+    build:
+      context: ./frontend_service  # path to your the frontend app's Dockerfile
     image: frontend_service:latest
     container_name: frontend
-    networks:
-      - fabflix
-
-  database:
-    container_name: database
-    image: mysql:5.7.43
-    env_file:
-     - ./database.env
-    volumes:
-      - ./mysql_data:/var/lib/mysql  # Use a named volume for persistence
+    ports:
+      - "3000:3000"
+    depends_on:
+      - database
     networks:
       - fabflix
 
   authentication:
-    container_name: authentication
     build:
       context: ./authentication_service
+    container_name: authentication
+    ports:
+      - "8081:8081"
     depends_on:
       - database
     env_file:
@@ -46,6 +41,8 @@ services:
     container_name: search
     build: 
       context: ./movie_search_service
+    ports:
+      - "8082:8082"
     depends_on:
       - database
     env_file:
@@ -53,6 +50,16 @@ services:
     networks:
       - fabflix
 
+  database:
+    container_name: database
+    image: mysql:5.7.43
+    platform: linux/x86_64 # necessary to work on Joe's M1 Mac
+    env_file:
+     - ./database.env
+    volumes:
+      - ./mysql_data:/var/lib/mysql  # Use a named volume for persistence
+    networks:
+      - fabflix
 
 # create a dedicated Docker network so all the container can talk to each other
 # where they reference each other by their container name (e.g. 'nginx', 'frontend', etc)
