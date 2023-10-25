@@ -20,6 +20,8 @@ mysql_data/
 /logs
 
 **/authentication_service/target/
+**/movie_search_service/target/
+/Users/dawoudmahmud/code/FabFlix/movie_search_service/target
 .DS_Store
 .idea/
 # misc

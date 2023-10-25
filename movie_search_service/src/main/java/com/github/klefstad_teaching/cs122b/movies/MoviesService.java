@@ -12,25 +12,23 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 @SpringBootApplication
 @SecuredStackService
 @EnableConfigurationProperties({
-    MoviesServiceConfig.class
+        MoviesServiceConfig.class
 })
-public class MoviesService
-{
-    public static void main(String[] args)
-    {
+public class MoviesService {
+    public static void main(String[] args) {
         SpringApplication.run(MoviesService.class, args);
     }
-}
 
-// @Bean
-// public WebMvcConfigurer corsConfigurer() {
-//     return new WebMvcConfigurer() {
-//         @Override
-//         public void addCorsMappings(CorsRegistry registry) {
-//             registry.addMapping("/**")
-//                     .allowedMethods("*")
-//                     .allowedHeaders("*")
-//                     .allowedOrigins("*");
-//         }
-//     };
-// }
+    @Bean
+    public WebMvcConfigurer corsConfigurer() {
+        return new WebMvcConfigurer() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/**")
+                        .allowedMethods("*")
+                        .allowedHeaders("*")
+                        .allowedOrigins("*");
+            }
+        };
+    }
+}

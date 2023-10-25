@@ -86,7 +86,9 @@ public class IDMAuthenticationManager
  //should be using all these functions to make sure logic is complete
     public User selectAndAuthenticateUser(String email, char[] passwordAttempt)
     {
-        try{
+        try {
+            // TODO: create new function for check password
+            //      Shouldn't be getting a length error on login attempt
             Validate.checkPassword(passwordAttempt);
             Validate.checkEmail(email);
             User potential = repo.selectUser(email);
