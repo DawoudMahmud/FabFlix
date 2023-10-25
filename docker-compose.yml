@@ -53,7 +53,7 @@ services:
   database:
     container_name: database
     image: mysql:5.7.43
-    #platform: linux/x86_64 # necessary to work on Joe's M1 Mac
+    # platform: linux/x86_64 # necessary to work on Joe's M1 Mac
     env_file:
      - ./database.env
     volumes:
@@ -69,4 +69,3 @@ networks:
 volumes:
   mysql_data:
     driver: local  
-
