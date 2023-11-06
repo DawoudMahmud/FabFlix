@@ -13,8 +13,8 @@ public final class Validate
 {
     public static void checkPassword(char[] testPassword)
     {
-        String regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{10,20}$";
-        if(testPassword.length  < 10  || testPassword.length  > 20)
+        String regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{7,40}$";
+        if(testPassword.length  < 7 || testPassword.length > 40)
             throw new ResultError(IDMResults.PASSWORD_DOES_NOT_MEET_LENGTH_REQUIREMENTS);
         boolean matches = Pattern.matches(regex, CharBuffer.wrap(testPassword));
         //Pattern p = Pattern.compile(regex);

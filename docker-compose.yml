@@ -18,23 +18,47 @@ services:
     # this names the frontend container, 'frontend'
     image: frontend_service:latest
     container_name: frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - database
+    networks:
+      - fabflix
+
+  authentication:
+    build:
+      context: ./authentication_service
+    container_name: authentication
+    ports:
+      - "8081:8081"
+    depends_on:
+      - database
+    env_file:
+     - ./database.env
+    networks:
+      - fabflix
+
+  search:
+    container_name: search
+    build: 
+      context: ./movie_search_service
+    ports:
+      - "8082:8082"
+    depends_on:
+      - database
+    env_file:
+     - ./database.env
     networks:
       - fabflix
 
   database:
     container_name: database
     image: mysql:5.7.43
+    # platform: linux/x86_64 # necessary to work on Joe's M1 Mac
     env_file:
      - ./database.env
     volumes:
       - ./mysql_data:/var/lib/mysql  # Use a named volume for persistence
-
-  authentication:
-    container_name: authentication
-    build:
-      context: ./authentication_service
-    env_file:
-     - ./database.env
     networks:
       - fabflix
 
